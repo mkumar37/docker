@@ -1,0 +1,6 @@
+  
+docker build -t myjenk .
+(out) ...
+(out) Successfully built 471fc0d22bff
+(out) $ docker run -d -v /var/run/docker.sock:/var/run/docker.sock \
+(out)                 -v $(which docker):/usr/bin/docker -p 8080:8080 myjenk
